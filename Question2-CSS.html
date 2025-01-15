@@ -1,15 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Question 2 - CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Links and Image</title>
     <style>
+        /* Style for links */
         .mainsection a {
-            text-decoration: none;
+            text-decoration: underline; /* Ensures links are clearly indicated */
             color: #414040;
             outline: none;
         }
-       .mainsection ul {
-            list-style-type: none; /* Removes bullets from the list */
+
+        .mainsection a:focus {
+            outline: 2px solid #000; /* Adds focus outline for accessibility */
+        }
+
+        /* Style for the list */
+        .mainsection ul {
+            list-style-type: none; /* Removes bullets */
             padding: 0;
         }
 
@@ -17,25 +27,26 @@
             margin: 5px 0; /* Adds spacing between list items */
         }
 
+        /* Style for the image */
         .mainsection img {
             max-width: 100%; /* Ensures the image is responsive */
             height: auto;
         }
-       </style>
+    </style>
 </head>
 <body>
     <div class="mainsection">
-        <h1>
-            <img src="lab2/lab2-imageoftext.gif" alt="Shopping categories" />
-        </h1>
+        
+        <h1>Shopping Categories</h1>
+        
         <ul>
-            <li><a href="#"style="text-decoration: underline;">Animals</a></li>
-            <li><a href="#"style="text-decoration: underline;">Computers</a></li>
-            <li><a href="#"style="text-decoration: underline;">Diversity and Inclusion</a></li>
-            <li><a href="#"style="text-decoration: underline;">Food</a></li>
-            <li><a href="#"style="text-decoration: underline;">Medicine</a></li>
-            <li><a href="#"style="text-decoration: underline;">Music</a></li>
+            <li><a href="#" >Animals</a></li>
+            <li><a href="#" >Computers</a></li>
+            <li><a href="#" >Diversity and Inclusion</a></li>
+            <li><a href="#" >Food</a></li>
+            <li><a href="#" >Medicine</a></li>
+            <li><a href="#" >Music</a></li>
         </ul>
-    </div>    
-   </body>
+    </div>
+</body>
 </html>
