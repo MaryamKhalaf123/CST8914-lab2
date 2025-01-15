@@ -2,34 +2,41 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Question 3 - CSS & HTML</title>
   <style>
+    
     .button {
-      background-color: #4CAF50; /* Green background */
+      background-color: #006400; 
+      color: #FFFFFF; 
       border: none;
-      color: white; /* White text */
       padding: 15px 32px;
       text-align: center;
-      text-decoration: none;
-      display: inline-block;
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
-      border-radius: 5px; /* Rounded corners */
+      border-radius: 5px;
     }
 
+    .button:focus, .button:hover {
+      outline: 2px solid #FFD700;
+    }
+
+  
     body {
       padding: 20px;
-      background-color: #2f2f2f; /* Dark background */
-      font-family: Arial, sans-serif; /* Cleaner font */
+      background-color: #1c1c1c; 
+      font-family: Arial, sans-serif; 
+      color: #E0E0E0; 
     }
 
-    h1, h2, p {
-      color: white; /* Adjusted text to be visible on dark background */
+    h1 {
+      color: #FFD700; 
     }
 
     p {
-      font-size: 18px; /* Increased font size for better readability */
+      font-size: 18px; 
     }
   </style>
 </head>
@@ -37,7 +44,9 @@
 <body>
   <h1>HTML Made Easy</h1>
   <p>What causes errors in HTML?</p>
-  <button class="button">Submit Answers</button>
+
+  <!-- Use a proper semantic <button> element -->
+  <button class="button" type="button" aria-label="Submit your answers">Submit Answers</button>
 </body>
 
 </html>
