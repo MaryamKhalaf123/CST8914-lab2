@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,18 +6,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Button Example</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:focus, button:hover {
+            outline: 3px solid #FFD700; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>HTML DOM Events</h1>
-    <p>Trigger a function on hover to output "Hello World":</p>
+    <p>Trigger a function to output "Hello World" using both mouse and keyboard:</p>
 
-    <button onmouseover="displayText()" onfocus="displayText()">Action!</button>
-    <p id="demo"></p>
+    <!-- Accessible button -->
+    <button 
+        onmouseover="displayText()" 
+        onfocus="displayText()" 
+        aria-describedby="demo">
+        Action!
+    </button>
+    <p id="demo" role="alert"></p>
 
     <script>
         function displayText() {
-            document.getElementById("demo").innerHTML = "Hello World";
+            // Dynamically update the content
+            document.getElementById("demo").textContent = "Hello World";
         }
     </script>
 </body>
