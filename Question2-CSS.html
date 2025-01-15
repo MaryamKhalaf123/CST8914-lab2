@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Question 2 - CSS</title>
-   <style>
-    .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
-    }
+    <title>Question 2 - CSS</title>
+    <style>
+        .mainsection a {
+            text-decoration: none;
+            color: #414040;
+            outline: none;
+        }
+       .mainsection ul {
+            list-style-type: none; /* Removes bullets from the list */
+            padding: 0;
+        }
 
-    
-    </style>
+        .mainsection li {
+            margin: 5px 0; /* Adds spacing between list items */
+        }
+
+        .mainsection img {
+            max-width: 100%; /* Ensures the image is responsive */
+            height: auto;
+        }
+       </style>
 </head>
 <body>
-<div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
-
-<ul>
-  <li><a href="#">Animals</a></li>
-  <li><a href="#">Computers</a></li>
-  <li><a href="#">Diversity and inclusion</a></li>
-  <li><a href="#">Food</a></li>
-  <li><a href="#">Medicine</a></li>
-  <li><a href="#">Music</a></li>
-</ul>
-</div>    
-
-</body>
+    <div class="mainsection">
+        <h1>
+            <img src="lab2/lab2-imageoftext.gif" alt="Shopping categories" />
+        </h1>
+        <ul>
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Diversity and Inclusion</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Medicine</a></li>
+            <li><a href="#">Music</a></li>
+        </ul>
+    </div>    
+   </body>
 </html>
